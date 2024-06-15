@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f0f0f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #444;
+      }
+      h1,
+      h3 {
+        margin: 0.5em 0;
+        text-align: center;
+        color: #333;
+      }
+      #tasks-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .task-section {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        max-width: 90%;
+        transition: transform 0.2s;
+      }
+      .task-section:hover {
+        transform: scale(1.05);
+      }
+      .task-section h3 {
+        margin-top: 0;
+        color: #007bff;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #007bff;
+        color: white;
+        border: none;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arin Yadav</h1>
+    <h3>VIT Chennai CSE</h3>
+    <h3>2:30 - 4:30</h3>
+    <div id="tasks-container">
+      <div class="task-section" id="html-tasks">
+        <h3>HTML Tasks</h3>
+        <table>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Link</th>
+          </tr>
+          <tr>
+            <td>Task 1</td>
+            <td>
+              <a href="./htmlTasks/task1.html" target="_blank">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Task 2</td>
+            <td>
+              <a href="./htmlTasks/task2.html" target="_blank">Task 2 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-section" id="css-tasks">
+        <h3>CSS Tasks</h3>
+        <table>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Link</th>
+          </tr>
+          <tr>
+            <td>Task 1</td>
+            <td>
+              <a href="./cssTasks/task1.html" target="_blank">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Task 2</td>
+            <td>
+              <a href="./cssTasks/task2.html" target="_blank">Task 2 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-section" id="js-tasks">
+        <h3>JS Tasks</h3>
+        <table>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Link</th>
+          </tr>
+          <tr>
+            <td>Task 1</td>
+            <td>
+              <a href="./jsTasks/task1.html" target="_blank">Task 1 link</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Task 2</td>
+            <td>
+              <a href="./jsTasks/task2.html" target="_blank">Task 2 link</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="task-section" id="bootstrap-tasks">
+        <h3>Bootstrap Tasks</h3>
+        <table>
+          <tr>
+            <th>Task Name</th>
+            <th>Task Link</th>
+          </tr>
+          <tr>
+            <td>Task 1</td>
+            <td>
+              <a href="./bootstrapTasks/task1.html" target="_blank"
+                >Task 1 link</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Task 2</td>
+            <td>
+              <a href="./bootstrapTasks/task2.html" target="_blank"
+                >Task 2 link</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
