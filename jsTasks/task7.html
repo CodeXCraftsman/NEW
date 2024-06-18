@@ -1,29 +1,47 @@
-<html>
-   <head>
-      <script type="text/javascript">
-         var imageElement = null;
-
-         function initialize() {
-            imageElement = document.getElementById('myimg');
-            imageElement.style.position = 'relative';
-            imageElement.style.left = '50px';
-         }
-
-         function moveRight() {
-            imageElement.style.left = parseInt(imageElement.style.left) + 100 + 'px';
-         }
-
-         window.onload = initialize;
-      </script>
-   </head>
-
-   <body>
-      <form>
-         <img id="myimg" src="train1.png" />
-         <center>
-            <p>Click the button below to move the image right</p>
-            <input type="button" value="Click Me" onclick="moveRight();" />
-         </center>
-      </form>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js - task 7</title>
+    <script>
+      function start() {
+        document.getElementById("train").style.animationPlayState = "running";
+      }
+      function stop() {
+        document.getElementById("train").style.animationPlayState = "paused";
+      }
+    </script>
+    <style>
+      h1,
+      div {
+        text-align: center;
+      }
+      h1 {
+        color: rgb(2, 2, 109);
+      }
+      img {
+        padding-top: 100px;
+        animation: move 4s linear infinite;
+        animation-play-state: paused;
+      }
+      @keyframes move {
+        0% {
+          padding-left: 0%;
+        }
+        100% {
+          padding-left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img id="train" src="../imgs/train.png" alt="train" height="200px" />
+    <div style="width: 100%; height: 5px"></div>
+    <h1>Click the following buttons to handle animation</h1>
+    <div>
+      <button onclick="start()">Start</button>
+      <button onclick="stop()">Stop</button>
+    </div>
+  </body>
 </html>
